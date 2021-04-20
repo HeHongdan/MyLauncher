@@ -1,8 +1,19 @@
+# Mac文件夹的Meta信息
+.DS_Store
+*/.DS_Store
+
+# 构建C库临时文件
+.cxx
+.cxx/
+
 # Built application files
+app/release/
+*release/
 *.apk
 *.ap_
+*.aab
 
-# Files for the Dalvik VM
+# Files for the ART/Dalvik VM
 *.dex
 
 # Java class files
@@ -11,8 +22,10 @@
 # Generated files
 bin/
 gen/
+out/
 
 # Gradle files
+gradle/
 .gradle/
 build/
 
@@ -25,49 +38,46 @@ proguard/
 # Log Files
 *.log
 
-# =========================
-# Operating System Files
-# =========================
+# Android Studio Navigation editor temp files
+.navigation/
 
-# OSX
-# =========================
+# Android Studio captures folder
+captures/
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# IntelliJ
+*.iml
+.idea
+.idea/
 
-# Thumbnails
-._*
+# Keystore files
+# Uncomment the following lines if you do not want to check your keystore files in.
+*.jks
+*.keystore
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Google Services (e.g. APIs or Firebase)
+google-services.json
 
-# Windows
-# =========================
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
 
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
 
-# Folder config file
-Desktop.ini
+# Version control
+vcs.xml
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint/reports/
